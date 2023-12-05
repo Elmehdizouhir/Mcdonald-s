@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menus de sandwitch</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+      * {
+        font-family: "Ubuntu", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        text-decoration: none;
+      }
+      ul {
+        display: inline-block;
+        list-style-type: none;
+      }
+      ul li {
+        display: inline-block;
+        margin-right: 35px;
+      }
+      #id1 {
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 5%;
+      }
+      hr {
+        color: black;
+        font-size: 100px;
+      }
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      ul li a:hover {
+        color: darkgoldenrod;
+      }
+      #tbody {
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 2%;
+        text-decoration: none;
+        color: black;
+        border-radius: 10%;
+        background-color: ghostwhite;
+        box-shadow: 2px 2px 20px;
+      }
+      #tbody a{
+        text-decoration: none;
+        color: black;
+      }
+      div a p {
+        font-size: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      .label1{
+        cursor: pointer;
+      }
+      #content{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        
+      }
+      
+      input[type="checkbox"]:checked + .label1 + #content {
+        display: block;
+      
+      }
+
+      #content-mx{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        
+      }
+      .label2{
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked + .label2 + #content-mx {
+        display: block;
+      
+      }
+      #content-hap{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        
+      }
+      
+      .label3{
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked + .label3 + #content-hap {
+        display: block;
+      
+      }
+      #content-duo{
+        display: none;
+        position: absolute;
+        bottom: 0;
+      }
+      .label4{
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked + .label4 + #content-duo {
+        display: block;
+      }
+      #content-mini{
+        display: none;
+        position: absolute;
+        bottom: 0;
+      }
+      .label5{
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked +.label5 + #content-mini{
+        display: block;
+      }
+      #nav1{
+        border: 2px solid gainsboro;
+        margin: 1%;
+        background-color: red;
+        border-radius: 20px;
+        color: white;
+      }
+      #nav1:hover{
+        color: black;
+        border: 2px solid red;
+        background-color: white;
+      }
+      #nav2{
+        border: 2px solid gainsboro;
+        margin: 1%;
+        background-color: darkorange;
+        border-radius: 20px;
+        color: white;
+      }
+      #nav2:hover{
+        color: black;
+        border: 2px solid darkorange;
+        background-color: white;
+      }
+      #nav3{
+        border: 2px solid gainsboro;
+        margin: 1%;
+        background-color: cornflowerblue;
+        border-radius: 20px;
+        color: white;
+      }
+      #nav3:hover{
+        color: black;
+        border: 2px solid cornflowerblue;
+        background-color: white;
+      }
+      .p1{
+        float: right;
+      }
+      .p2{
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header id="header" class="row bg-warning">
+        <nav class="col-sm-3" style="text-align: left">
+          <img
+            src="https://th.bing.com/th/id/R.92c4b34e819092cd933a10e2e60fd52b?rik=SkuGOY1V5opbrA&riu=http%3a%2f%2fimg2.wikia.nocookie.net%2f__cb20130603185417%2flogopedia%2fimages%2fb%2fba%2fMcdonalds_logo.png&ehk=TCzEjRNABbhEqf8saXYvQCtFotYgJHEsdbmULRf9H2k%3d&risl=&pid=ImgRaw&r=0"
+            width="15%"
+          />
+        </nav>
+        <ul>
+          <li><a class="col-sm-2" href="principal.html">homme</a></li>
+          <li><a class="col-sm-2" href="#">contact</a></li>
+          <li><a class="col-sm-2" href="#">help</a></li>
+        </ul>
+      </header>
+      <tbody>
+        <div id="id1" class="row">
+          <input type="checkbox" id="toggle1">
+          <label id="tbody" class="col-sm-2 label1" for="toggle1">
+            <a  href="#" >
+              <img
+                src="https://images.deliveryhero.io/image/menus-glovo/products/9843b68b7c8d8dd44a6307750a7afc02828e552f2e82bf1899f51fede9ec0f7f?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0="
+                width="42%"
+                alt="logo menu"
+              />
+              <hr />
+              <p>BO MENU</p>
+            </a>
+          </label>
+          <div id="content">
+            <div  class="row">
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a11ab2f74da075341b4c17adf8db430776b846dea57702de63c63884f46882c3?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big Tasty</p><br>
+                <p style=" text-align: end;">74,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/0c4ca1d005ff536babe1887ce79100a16b30c7bf04dc2707b86d8c743b3536e0?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">280™ Original</p><br>
+                <p style=" text-align:end;">73,00 MAD</p>
+              </nav>
+              <nav id="nav3" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/ac46621322aa858d242583e64fbe6038de036bf07f23d01030a2130e28c90495?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Filet-O-Fish™</p><br>
+                <p style=" text-align: end;">56,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a5659a223829c4d01e001e8095e5e50e93e4472be17c96be494c59d22a7be403?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Gr Wrap™ Miel</p><br>
+                <p style=" text-align: end;">58,00 MAD</p>
+              </nav>
+              
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/bf4fdc9fdaacc9da80b699bfc88ba8a28a620d9a73de6b90d0a83ca0c6b8311f?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Gr Wrap™ Algérienne</p><br>
+                <p style=" text-align: end;">58,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/9843b68b7c8d8dd44a6307750a7afc02828e552f2e82bf1899f51fede9ec0f7f?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big mag</p><br>
+                <p style=" text-align: end;">60,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/ef956cf6316503c2fa9c115bb1b6eb621d2e80259b40d61b79754dcebcfd6428?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Cheeseburger</p><br>
+                <p style=" text-align: end;">55,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/412c8a7e4141f5fb2f8896544bb1b5eaa4d10c6cc3d2164df6f283a1ae89e2e9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Royal Cheese™</p><br>
+                <p style=" text-align: end;">57,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/1df2ea5e5027da52c1ab7c5118a4151201ea374c26e3da7f3ebf6b2f6fc0d9eb?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">McChicken™</p><br>
+                <p style=" text-align: end;">58,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/f18c28dacb4cf9745deaf65dfcb590cae821fa7bdc1c9a80a49e9d5cd7940157?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big Tasty Chicken™</p><br>
+                <p style=" text-align: end;">72,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/1224169bcd7786a7247a21d1f3f66249f06df79c8c748828bc95d0a56c9aaa40?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Big Tasty™</p><br>
+                <p style=" text-align: end;">88,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/340b68a8a5b9df2f47f15b44932261c488a2665559a12ab4f60a5b5d797a1783?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Triple Cheese™</p><br>
+                <p style=" text-align: end;">60,00 MAD</p>
+              </nav>
+              <nav id="nav3" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/8b03b6d5397cee8602f06b36c72941b2e8bfad22652e247c7d079abbd1ad253e?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Filet-O-Fish™</p><br>
+                <p style=" text-align: end;">60,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/7b1266e9a96a655485a72f9ab02262d7b956e0b2b05b1e9a684e38e1ff19a8b9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Grand Classic</p><br>
+                <p style=" text-align: end;">75,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/58c712969aa664cdca6bda8edb6b56c1d0258bdf16f6681df7466bf50b0aaed9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Chicken Mythic™</p><br>
+                <p style=" text-align: end;">72,00 MAD</p>
+              </nav>
+ 
+            </div>
+            
+          </div>
+          <input type="checkbox" id="toggle2">
+          <label id="tbody" class="col-sm-2 label2" for="toggle2">
+            <a  href="#" >
+              <img
+                src="https://images.deliveryhero.io/image/menus-glovo/products/9843b68b7c8d8dd44a6307750a7afc02828e552f2e82bf1899f51fede9ec0f7f?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0="
+                width="42%"
+                alt="logo menu mx"
+              />
+              <hr />
+              <p>BOMX MENU</p>
+            </a>
+
+          </label>
+          <div id="content-mx">
+            <div  class="row">
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a11ab2f74da075341b4c17adf8db430776b846dea57702de63c63884f46882c3?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big Tasty</p><br>
+                <p style=" text-align: end;">79,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/0c4ca1d005ff536babe1887ce79100a16b30c7bf04dc2707b86d8c743b3536e0?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">280™ Original</p><br>
+                <p style=" text-align:end;">78,00 MAD</p>
+              </nav>
+              <nav id="nav3" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/ac46621322aa858d242583e64fbe6038de036bf07f23d01030a2130e28c90495?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Filet-O-Fish™</p><br>
+                <p style=" text-align: end;">61,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a5659a223829c4d01e001e8095e5e50e93e4472be17c96be494c59d22a7be403?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Gr Wrap™ Miel</p><br>
+                <p style=" text-align: end;">63,00 MAD</p>
+              </nav>
+              
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/bf4fdc9fdaacc9da80b699bfc88ba8a28a620d9a73de6b90d0a83ca0c6b8311f?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Gr Wrap™ Algérienne</p><br>
+                <p style=" text-align: end;">63,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/9843b68b7c8d8dd44a6307750a7afc02828e552f2e82bf1899f51fede9ec0f7f?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big mag</p><br>
+                <p style=" text-align: end;">65,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/ef956cf6316503c2fa9c115bb1b6eb621d2e80259b40d61b79754dcebcfd6428?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Cheeseburger</p><br>
+                <p style=" text-align: end;">60,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/412c8a7e4141f5fb2f8896544bb1b5eaa4d10c6cc3d2164df6f283a1ae89e2e9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Royal Cheese™</p><br>
+                <p style=" text-align: end;">62,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/1df2ea5e5027da52c1ab7c5118a4151201ea374c26e3da7f3ebf6b2f6fc0d9eb?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">McChicken™</p><br>
+                <p style=" text-align: end;">63,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/f18c28dacb4cf9745deaf65dfcb590cae821fa7bdc1c9a80a49e9d5cd7940157?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Big Tasty Chicken™</p><br>
+                <p style=" text-align: end;">77,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/1224169bcd7786a7247a21d1f3f66249f06df79c8c748828bc95d0a56c9aaa40?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Big Tasty™</p><br>
+                <p style=" text-align: end;">93,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/340b68a8a5b9df2f47f15b44932261c488a2665559a12ab4f60a5b5d797a1783?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Triple Cheese™</p><br>
+                <p style=" text-align: end;">65,00 MAD</p>
+              </nav>
+              <nav id="nav3" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/8b03b6d5397cee8602f06b36c72941b2e8bfad22652e247c7d079abbd1ad253e?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Double Filet-O-Fish™</p><br>
+                <p style=" text-align: end;">65,00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/7b1266e9a96a655485a72f9ab02262d7b956e0b2b05b1e9a684e38e1ff19a8b9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Grand Classic</p><br>
+                <p style=" text-align: end;">80,00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/58c712969aa664cdca6bda8edb6b56c1d0258bdf16f6681df7466bf50b0aaed9?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p style="float: right;">Chicken Mythic™</p><br>
+                <p style=" text-align: end;">77,00 MAD</p>
+              </nav>
+ 
+            </div>
+            
+          </div>
+          <input type="checkbox" id="toggle3">
+          <label  id="tbody" class="col-sm-2 label3" for="toggle3" >
+            <a  href="#" >
+              <img
+                src="https://images.deliveryhero.io/image/menus-glovo/products/549bb550e77159aa4aba02a6b849a499c17e330f91554229456a305f5605dea8?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ=="
+                width="42%%"
+                alt="logo happy meal"
+              />
+              <hr />
+              <p>HAPPY MEAL</p>
+            </a>
+          </label>
+          <div id="content-hap">
+            <div class="row ">
+              <nav id="nav1" class="col-sm-5">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/cb21ced47ed00f279a9853a2c55024fcfbb1c8e7700013331cc2c76745ded3a0?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Hamburger</p>
+                <p class="p2">33.00 MAD</p>
+
+              </nav>
+              <nav id="nav1" class="col-sm-5">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/58de56536f4d20da92e812f35820e807edff4468fd7ce1592eac97677c23a6a8?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Cheeseburger</p>
+                <p class="p2">33.00 MAD</p>
+
+              </nav>
+              <nav id="nav2" class="col-sm-5">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/549bb550e77159aa4aba02a6b849a499c17e330f91554229456a305f5605dea8?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Chicken burger</p>
+                <p class="p2">33.00 MAD</p>
+
+              </nav>
+              <nav id="nav1" class="col-sm-5 bg-dark">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/ce8c6068dbc13654c78521f04f49050d65ff6581ba82dbd480efb0caa609ea61?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">McNuggets™</p>
+                <p class="p2">33.00 MAD</p>
+
+              </nav>
+            </div>
+          </div>
+          <input type="checkbox" id="toggle4">
+          <label id="tbody" class="col-sm-2 label4" for="toggle4">
+            <a href="#">
+              <img
+                src="https://images.deliveryhero.io/image/menus-glovo/products/dd14100bfc75813e94e529adcf05776d9ae6bc40bbaeed3873ba282266ddedc7?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ=="
+                width="42%"
+                alt="logo menu duo"
+              />
+              <hr />
+              <p>MENU DUO</p>
+            </a>
+   
+          </label>
+          <div id="content-duo">
+            <div class="row">
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a075c1e8885657bf3bb53e3cc889e6c14c028eb590f29e56e3df274dc2885857?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Smokey Junior Barbecue</p>
+                <p class="p2">38.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/3e742becf96631046cf805921c219e35be77981fd3f5aab1f2e9c9b82b85e285?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Tasty Junior Chicken</p>
+                <p class="p2">34.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/26000250638de8e3c7af5208b6625fe406849f1493e3e5e239905c135eed2bb2?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Tasty Junior</p>
+                <p class="p2">32.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/50737a6f6c7546e8684b6469f45e92e291057c1f1ed4eb8527c5b94410454cc3?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Chicken Cheese</p>
+                <p class="p2">29.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/1365da4c4d5ea07d4882b4890fed26cbdd372e5ef5c414ee0a5db0dbe5fd9cd7?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Wrapcheese</p>
+                <p class="p2">44.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/981712f6a568bbe35c7b7e1ca2dcfb5810103f0ac60cf9a76630aae4e70f45b4?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Wrapchecken</p>
+                <p class="p2">44.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/dd14100bfc75813e94e529adcf05776d9ae6bc40bbaeed3873ba282266ddedc7?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Wraphamberger</p>
+                <p class="p2">44.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/10a614b2a62e82ec0f44750569f17e362a262b8be049d608a77557d34753b79c?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">P'tit Wrap Tasty</p>
+                <p class="p2">35.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/10a614b2a62e82ec0f44750569f17e362a262b8be049d608a77557d34753b79c?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">P'tit Wrap Miel</p>
+                <p class="p2">35.00 MAD</p>
+              </nav>
+            </div>
+          </div>
+          <input type="checkbox" id="toggle5">
+          <label id="tbody" class="col-sm-2 label5" for="toggle5">
+            <a href="#">
+              <img
+                src="https://images.deliveryhero.io/image/menus-glovo/products/3e179da619975e4da93e31ced7592a0a02c1475676165317ac5388ee6fee891b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0="
+                width="42%"
+                alt="logo menu mini"
+              />
+              <hr />
+              <p>MINI MENU </p>
+            </a>
+            
+          </label>
+          <div id="content-mini">
+            <div class="row">
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/a075c1e8885657bf3bb53e3cc889e6c14c028eb590f29e56e3df274dc2885857?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Smokey Junior Barbecue</p>
+                <p class="p2">38.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/3e742becf96631046cf805921c219e35be77981fd3f5aab1f2e9c9b82b85e285?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Tasty Junior Chicken</p>
+                <p class="p2">34.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/26000250638de8e3c7af5208b6625fe406849f1493e3e5e239905c135eed2bb2?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Tasty Junior</p>
+                <p class="p2">32.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/50737a6f6c7546e8684b6469f45e92e291057c1f1ed4eb8527c5b94410454cc3?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Chicken Cheese</p>
+                <p class="p2">29.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/10a614b2a62e82ec0f44750569f17e362a262b8be049d608a77557d34753b79c?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">P'tit Wrap Tasty</p>
+                <p class="p2">35.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/10a614b2a62e82ec0f44750569f17e362a262b8be049d608a77557d34753b79c?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">P'tit Wrap Miel</p>
+                <p class="p2">35.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/9c4908faf08c5430f0eddf98340ad117ea7532cdb10e4e33154dc105b65f2f18?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">McNuggets™</p>
+                <p class="p2">33.00 MAD</p>
+              </nav>
+              <nav id="nav2" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/200863148889589c7bff64bf585e002072e3fcec618f1766a28a13b9f9bb5947?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Chicken Burger</p>
+                <p class="p2">28.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/3e179da619975e4da93e31ced7592a0a02c1475676165317ac5388ee6fee891b?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Cheeseburger</p>
+                <p class="p2">27.00 MAD</p>
+              </nav>
+              <nav id="nav1" class="col-sm-2">
+                <img src="https://images.deliveryhero.io/image/menus-glovo/products/3830e98258db5b8fd13be88bd626920ff8a4b4472ff386f0b65fa965a25c51fc?t=W3siYXZpZiI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo5NiwiaGVpZ2h0Ijo5Nn19XQ==" alt="logo">
+                <p class="p1">Hamburger</p>
+                <p class="p2">24.00 MAD</p>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+      </tbody>
+      
+        <!-- <footer>
+        <p>&copy; 2023 Your Website. All rights reserved. | Inspired by McDonald's</p>
+      </footer>  -->
+    </div>
+  </body>
+</html>

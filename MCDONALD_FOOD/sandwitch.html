@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Show/Hide Content</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #toggle[type="checkbox"] {
+        display: none;
+      }
+
+      label {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      #toggle[type="checkbox"]:checked + label + .content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle">اضغط للعرض</label>
+
+    <div class="content">
+      <p>هذا هو المحتوى الذي سيتم عرضه أو إخفاؤه</p>
+    </div>
+  </body>
+</html>
